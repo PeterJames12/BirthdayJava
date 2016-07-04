@@ -1,7 +1,6 @@
 package birthday;
 
 import java.util.HashSet;
-import java.util.Iterator;
 import java.util.Scanner;
 import java.util.Set;
 
@@ -40,11 +39,8 @@ public class Main {
     }
 
     private static void printHistory() {
-        Iterator<String> iterator = history.iterator();
 
-        while (iterator.hasNext()) {
-            System.out.println(iterator.next());
-        }
+        history.forEach(System.out::println);
     }
 
     private static void scan() {
